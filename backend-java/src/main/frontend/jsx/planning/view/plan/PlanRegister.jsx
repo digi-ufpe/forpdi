@@ -415,7 +415,7 @@ export default React.createClass({
 		);
 	},
 
-	render() {		
+	render() {
 		if (this.state.loading) {
 			return <LoadingGauge />;
 		}
@@ -425,7 +425,7 @@ export default React.createClass({
 			<div className="fpdi-card fpdi-card-full floatLeft">
 			
 			<h1>
-				{this.state.title}
+				{(this.state.title)}
 				{this.state.model && (this.context.roles.MANAGER || _.contains(this.context.permissions, PermissionsTypes.MANAGE_PLAN_PERMISSION))  ? 
 					(<span className="dropdown">
 						<a
